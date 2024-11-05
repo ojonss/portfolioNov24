@@ -3,7 +3,6 @@ document.querySelector(".dropdown-button").addEventListener("click", function ()
   dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
 });
 
-/* Close the dropdown when clicking outside */
 window.addEventListener("click", function (e) {
   if (!e.target.matches(".dropdown-button")) {
     const dropdown = document.querySelector(".dropdown-content");

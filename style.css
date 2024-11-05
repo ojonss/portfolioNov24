@@ -1,107 +1,109 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    display: grid;
-    grid-template-columns: 1fr 30%;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    background-image: url(images/bg-image.png);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-  }
-  
-  .content-container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    overflow-y: auto; /* ?? */
-  }
-  
-  header {
-    display: flex;
-    justify-content: center; 
-    position: relative;
-  }
-  
-  .header-container {
-    display: flex;
-    align-items: center;
-    gap: 2vw;
-  }
-  
-  /* Dropdown button styling */
-  .dropdown-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    position: relative; /* Make button the reference point for dropdown positioning */
-  }
-  
-  /* Dropdown content styling */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%; /* Position it directly below the button */
-    left: 0; /* Align with the left edge of the button */
-    background-color: #fff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    min-width: 150px;
-    margin-top: 5px; /* Small gap between button and dropdown */
-  }
-  
-  /* Dropdown link styling */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Main styling */
-  main {
-    padding: 20px;
-    justify-content: center;
-    display:flex;
-  }
-  
-  main section {
-    background-color: #8A9C57;
-    border: 0.5em solid black;
-    padding: 20px;
-    border-radius: 5%;
-    max-width: 70vw;
-  }
-  
-  main section h2 {
-    justify-self: center;
-    margin-bottom: 10px;
-  }
-  
-  main section p {
-    margin-bottom: 15px;
-  }
-  
-  footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #8A9C57;
-    border-radius: 25%;
-    padding: 20px;
-    margin: auto;
-    gap: 2vw;
-    width: 30vw;
-    min-width: fit-content;
-    border: 0.5em solid black;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-image: url(images/bg-image.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  gap: 2vw;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.dropdown-button {
+  background-color: #8DB2CE;
+  padding: 1vh 1vw;
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+  position: relative;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #8DB2CE;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 6vw;
+  margin-top: 0.5vh;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 1vh 1vw;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #d4ecff;
+}
+
+main {
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+main section {
+  background-color: #8A9C57;
+  border: 0.5em solid black;
+  padding: 20px;
+  border-radius: 5%;
+  max-width: 70vw;
+}
+
+main section h2 {
+  justify-self: center;
+  margin-bottom: 10px;
+}
+
+main section p {
+  margin-bottom: 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #8A9C57;
+  border-radius: 25%;
+  padding: 20px;
+  margin: auto;
+  gap: 2vw;
+  width: 30vw;
+  min-width: fit-content;
+  border: 0.5em solid black;
+}
